@@ -133,7 +133,7 @@ body.light-mode #translate-toggle {
     color: #000;
 }
 
-
+/* body main hero section */
 body main{
     position: relative;
     z-index: 999;
@@ -174,6 +174,29 @@ main .hero button{
     border: solid 1px rgba(255, 255, 255, 0.18);
     box-shadow: inset 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
 }
+
+@media (max-width:1170px) {
+    main .hero h1{
+        font-size: 70px;
+    }
+}
+@media (max-width: 768px){
+    main .hero{
+        margin-top: 100px;
+        margin-left: 90px;
+    }
+
+}
+@media (max-width: 708px){
+    main .hero{
+        margin-top: 50px;
+        margin-left: 50px;
+        text-align: center;
+    }
+    main .hero h1{
+        font-size: 80px!important;
+    }
+}
 /* description section */
 main .description{
     margin: 0 auto;
@@ -199,7 +222,6 @@ main .description img{
     margin-left: 50px;
     font-family: "Vt323", serif;
     font-size: 20px;
-    
 }
 .description p span{
     animation: blink infinite 1s step-end;
@@ -213,6 +235,44 @@ main .description img{
     }
 }
 
+@media (max-width:1026px){
+    main .hero h1{
+        font-size: 50px
+    }
+    main .description{
+        margin-top: 100px;
+    }
+    main .description img{
+        width: 300pt;
+        top: -409px;
+    }
+    .description p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px){
+    main .description{
+        height: 150px;
+    }
+    .description p{
+        width: 100%;
+        margin-left: 0;
+        padding: 30px;
+    }
+    main .description img{
+        width: 200pt;
+        top: -405px;
+    }
+}
+
+@media (max-width: 708px) {
+    main .description img{
+        display: none;
+    }
+    main .description{
+        height: auto;
+    }
+}
 /* ========= About section ========== */
 .about {
     text-align: center;
@@ -633,25 +693,8 @@ textarea {
 
 /* Responsive styles for all sections */
 @media (max-width: 1024px) {
-    main .hero {
-        margin-top: 80px;
-        margin-left: 20px;
-    }
-    main .hero h1 {
-        font-size: 60px;
-    }
-    main .hero p, main .hero button {
-        font-size: 16px;
-    }
-    .description p {
-        width: 80%;
-        margin-left: 20px;
-    }
     .projects .card {
         grid-template-columns: 1fr;
-    }
-    .projects .card_img {
-        width: 100%;
     }
     .projects .card_data {
         width: 100%;
@@ -663,20 +706,6 @@ textarea {
 }
 
 @media (max-width: 768px) {
-    main .hero {
-        margin-top: 60px;
-        margin-left: 10px;
-    }
-    main .hero h1 {
-        font-size: 40px;
-    }
-    main .hero p, main .hero button {
-        font-size: 14px;
-    }
-    .description p {
-        width: 90%;
-        margin-left: 10px;
-    }
     .projects .card {
         grid-template-columns: 1fr;
     }
@@ -693,20 +722,6 @@ textarea {
 }
 
 @media (max-width: 480px) {
-    main .hero {
-        margin-top: 40px;
-        margin-left: 5px;
-    }
-    main .hero h1 {
-        font-size: 30px;
-    }
-    main .hero p, main .hero button {
-        font-size: 12px;
-    }
-    .description p {
-        width: 100%;
-        margin-left: 5px;
-    }
     .projects .card {
         grid-template-columns: 1fr;
     }
