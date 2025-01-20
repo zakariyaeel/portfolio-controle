@@ -24,9 +24,7 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrolling due to particles */
     transition: background-color 0.3s, color 0.3s;
-    overflow-y: auto;
 }
 
 body.light-mode {
@@ -44,6 +42,7 @@ body.light-mode {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     transition: background-color 0.3s;
+    top: 0;
 }
 
 body.light-mode #particles-js {
@@ -177,24 +176,24 @@ main .hero button{
 
 @media (max-width:1170px) {
     main .hero h1{
-        font-size: 70px;
+        font-size: 60px;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 728px){
     main .hero{
         margin-top: 100px;
-        margin-left: 90px;
+        margin-left: 50px;
     }
 
 }
 @media (max-width: 708px){
     main .hero{
         margin-top: 50px;
-        margin-left: 50px;
+        margin-left: 0;
         text-align: center;
     }
     main .hero h1{
-        font-size: 80px!important;
+        font-size: 70px!important;
     }
 }
 /* description section */
@@ -339,7 +338,24 @@ main .description img{
     width: 20%;
     box-shadow: 3px 3px #fff;
 }
-
+@media (max-width:700px){
+    .soft li,
+    .hard li {
+        width: 50%;
+    }
+    .soft ul,
+.hard ul{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+}
 /* education section */
 /*=============== Resume ===============*/
 .education {
@@ -461,13 +477,18 @@ div > h2 {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+    .resume__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .container {
-        width: 100%;
+        width: 80%;
         text-align: left;
         padding: 20px;
     }
     .resume__container::after {
-        left: 20px;
+        left: 82px;
     }
     .left-item,
     .right-item {
@@ -478,7 +499,14 @@ div > h2 {
         right: auto;
     }
 }
-
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+    .resume__container::after {
+        left: 28px;
+    }
+}
 /* projrcts section */
 
 .projects .cards{
@@ -579,6 +607,51 @@ div > h2 {
     }
     100%{
         transform: translateY(.5rem);
+    }
+}
+
+/* Responsive styles for all sections */
+@media (max-width: 1024px) {
+    .projects .card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .projects .card_data {
+        width: 200px;
+    }
+    .contact-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects .card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects .card_img {
+        width: 100%;
+    }
+    .projects .card_data {
+        width: 200px;
+        margin-inline: 0;
+    }
+    .contact-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects .card {
+        grid-template-columns: 1fr;
+    }
+    .projects .card_img {
+        width: 100%;
+    }
+    .projects .card_data {
+        width: 250px;
+        margin: 0 auto;
+    }
+    .contact .contact-container{
+        width: 80%;
     }
 }
 
@@ -688,51 +761,4 @@ textarea {
 
 .btn-submit:active {
     transform: translateY(1px);
-}
-
-
-/* Responsive styles for all sections */
-@media (max-width: 1024px) {
-    .projects .card {
-        grid-template-columns: 1fr;
-    }
-    .projects .card_data {
-        width: 100%;
-        bottom: -6rem;
-    }
-    .contact-container {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .projects .card {
-        grid-template-columns: 1fr;
-    }
-    .projects .card_img {
-        width: 100%;
-    }
-    .projects .card_data {
-        width: 100%;
-        bottom: -4rem;
-    }
-    .contact-container {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .projects .card {
-        grid-template-columns: 1fr;
-    }
-    .projects .card_img {
-        width: 100%;
-    }
-    .projects .card_data {
-        width: 100%;
-        bottom: -2rem;
-    }
-    .contact-container {
-        width: 100%;
-    }
 }
