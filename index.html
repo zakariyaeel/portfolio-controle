@@ -18,7 +18,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#Education">Education</a></li>
-                <li><a href="#projet">Work</a></li>
+                <li><a href="#projects">Work</a></li>
                 <li><a href="#Experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
@@ -35,7 +35,7 @@
             <p> < Ingénieur informatique / > </p>
             <p> Zakariyaeelhouari@gmail.com</p>
             <p> +212 69 30 58 327</p>
-            <button>Download My CV</button>
+            <a href="./assets/cv/cv.pdf">Download My CV</a>
         </div>
         <div class="description glass">
             <img src="./assets/imgs/ana.png" alt="">
@@ -49,7 +49,7 @@
         </div>
 
         <!-- about section -->
-        <div class="about">
+        <div class="about" id="about">
             <h2>About Me</h2>
             <div class="about-area">
                 <div class="choosing-labels">
@@ -77,6 +77,8 @@
                     </div>
                 </div>
             </div>
+
+            
         </div>
         
         <!-- Education section -->
@@ -85,30 +87,30 @@
             <div class="resume__container">
                 <div class="container left-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Bachelor of Science in Computer Science</h3>
-                        <p class="resume__date">2015 - 2019</p>
-                        <p class="resume__description">University of XYZ</p>
+                        <h3 class="resume__subtitle">Ingenieur informatique</h3>
+                        <p class="resume__date">2024 - Now</p>
+                        <p class="resume__description">Private University of fes</p>
                     </div>
                 </div>
                 <div class="container right-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Master of Science in Software Engineering</h3>
-                        <p class="resume__date">2019 - 2021</p>
-                        <p class="resume__description">University of ABC</p>
+                        <h3 class="resume__subtitle">Associate degree in web developpement</h3>
+                        <p class="resume__date">2021 - 2023</p>
+                        <p class="resume__description">Ista Al Adarissa</p>
                     </div>
                 </div>
                 <div class="container left-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Bachelor of Science in Computer Science</h3>
-                        <p class="resume__date">2015 - 2019</p>
-                        <p class="resume__description">University of XYZ</p>
+                        <h3 class="resume__subtitle">Baccaloréat Phisoque</h3>
+                        <p class="resume__date">2019 - 2020</p>
+                        <p class="resume__description">Lycee al adarissa</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Projects section -->
-        <div class="projects" id="Work">
+        <div class="projects" id="projects">
             <h2>Projects</h2>
             <div class="cards">
                 <div class="card">
@@ -172,30 +174,30 @@
             <div class="resume__container">
                 <div class="container right-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Bachelor of Science in Computer Science</h3>
-                        <p class="resume__date">2015 - 2019</p>
-                        <p class="resume__description">University of XYZ</p>
+                        <h3 class="resume__subtitle">Recensement général de la population et de l'habitat 2024</h3>
+                        <p class="resume__date">2024</p>
+                        <p class="resume__description">volentaire</p>
                     </div>
                 </div>
                 <div class="container left-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Bachelor of Science in Computer Science</h3>
-                        <p class="resume__date">2015 - 2019</p>
-                        <p class="resume__description">University of XYZ</p>
+                        <h3 class="resume__subtitle">Email developper</h3>
+                        <p class="resume__date">2023</p>
+                        <p class="resume__description">Wondermail</p>
                     </div>
                 </div>
                 <div class="container right-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Bachelor of Science in Computer Science</h3>
-                        <p class="resume__date">2015 - 2019</p>
-                        <p class="resume__description">University of XYZ</p>
+                        <h3 class="resume__subtitle">Stage de Web developer</h3>
+                        <p class="resume__date">mars 2023</p>
+                        <p class="resume__description">Radeef</p>
                     </div>
                 </div>
                 <div class="container left-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Bachelor of Science in Computer Science</h3>
-                        <p class="resume__date">2015 - 2019</p>
-                        <p class="resume__description">University of XYZ</p>
+                        <h3 class="resume__subtitle">Wordpress developper</h3>
+                        <p class="resume__date">2021</p>
+                        <p class="resume__description">Freelance</p>
                     </div>
                 </div>
             </div>
@@ -468,7 +470,7 @@ hardSkillsLabel.addEventListener('click', () => {
     function toogleMenu() {
         //show menu
         if (menulist.style.maxHeight == "0px") {
-            menulist.style.maxHeight = "130px";
+            menulist.style.maxHeight = "520px";
         } else {
             menulist.style.maxHeight = "0px";
         }
