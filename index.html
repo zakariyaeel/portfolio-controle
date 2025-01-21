@@ -14,7 +14,7 @@
 
     <header>
         <nav>
-            <ul>
+            <ul id="menulist">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#Education">Education</a></li>
@@ -24,6 +24,9 @@
                 <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
                 <li><button id="translate-toggle" aria-label="Toggle language">EN</button></li>
             </ul>
+            <div class="nav-icon">
+                <i class="fa-solid fa-bars" onclick="toogleMenu()"></i>
+            </div>
         </nav>
     </header>
     <main>
@@ -227,7 +230,7 @@
           </div>
     </main>
     <footer>
-        <p>&copy; 2025 Fati. All rights reserved.</p>
+        <p>&copy; 2025. All rights reserved.</p>
     </footer>
 
     <script>
@@ -458,6 +461,18 @@ hardSkillsLabel.addEventListener('click', () => {
     hardSkillsLabel.classList.add('active');
     softSkillsLabel.classList.remove('active');
 });
+    
+
+    let menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+    function toogleMenu() {
+        //show menu
+        if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "130px";
+        } else {
+            menulist.style.maxHeight = "0px";
+        }
+    }
 
     </script>
     
