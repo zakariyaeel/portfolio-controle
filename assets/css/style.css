@@ -249,6 +249,7 @@ main .description img{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+    display: none;
 }
 .description p {
     width: 50%;

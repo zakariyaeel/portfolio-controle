@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title id="page-title">Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
     <div id="particles-js"></div>
@@ -15,34 +14,34 @@
     <header>
         <nav>
             <ul id="menulist">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#projects">Work</a></li>
-                <li><a href="#Experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="#about" id="about-link">About</a></li>
+                <li><a href="#Education" id="education-link">Education</a></li>
+                <li><a href="#projects" id="work-link">Work</a></li>
+                <li><a href="#Experience" id="experience-link">Experience</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
                 <li><button id="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
                 <li><button id="translate-toggle" aria-label="Toggle language">EN</button></li>
             </ul>
             <div class="nav-icon">
-                <i class="fa-solid fa-bars" onclick="toogleMenu()"></i>
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
             </div>
         </nav>
     </header>
     <main>
         <div class="hero">
-            <h1>Zakariyae el Houari</h1>
-            <p> < Ingénieur informatique / > </p>
-            <p> Zakariyaeelhouari@gmail.com</p>
-            <p> +212 69 30 58 327</p>
-            <a href="./assets/cv/cv.pdf">Download My CV</a>
+            <h1 id="name">Zakariyae el Houari</h1>
+            <p id="job-title"> < Ingénieur informatique / > </p>
+            <p id="email"> Zakariyaeelhouari@gmail.com</p>
+            <p id="phone"> +212 69 30 58 327</p>
+            <a href="./assets/cv/cv.pdf" id="cv-download">Download My CV</a>
         </div>
         <div class="description glass">
             <img src="./assets/imgs/ana.png" alt="">
-            <p>
-                I am a software engineer with a passion for web development. 
-                I have experience in building web applications using modern technologies like React, Node.js, and MongoDB. 
-                I am also familiar with cloud platforms like AWS and Azure. I am always eager to learn new technologies and improve my skills. 
+            <p id="description">
+                I am a software engineer with a passion for web development.
+                I have experience in building web applications using modern technologies like React, Node.js, and MongoDB.
+                I am also familiar with cloud platforms like AWS and Azure. I am always eager to learn new technologies and improve my skills.
                 I am looking for new opportunities to work on exciting projects and collaborate with talented people
                 <span></span>
             </p>
@@ -50,7 +49,7 @@
 
         <!-- about section -->
         <div class="about" id="about">
-            <h2>About Me</h2>
+            <h2 id="about-me">About Me</h2>
             <div class="about-area">
                 <div class="choosing-labels">
                     <div class="label1 label" id="soft-skills-label">
@@ -63,47 +62,45 @@
                 <div class="skills-block">
                     <div class="soft" id="soft-skills">
                         <ul>
-                            <li>Communication</li>
-                            <li>Teamwork</li>
-                            <li>Problem Solving</li>
+                            <li id="communication">Communication</li>
+                            <li id="teamwork">Teamwork</li>
+                            <li id="problem-solving">Problem Solving</li>
                         </ul>
                     </div>
                     <div class="hard" id="hard-skills">
                         <ul>
-                            <li>Programming</li>
-                            <li>Data Analysis</li>
-                            <li>Machine Learning</li>
+                            <li id="programming">Programming</li>
+                            <li id="data-analysis">Data Analysis</li>
+                            <li id="machine-learning">Machine Learning</li>
                         </ul>
                     </div>
                 </div>
             </div>
-
-            
         </div>
-        
+
         <!-- Education section -->
         <div class="education" id="Education">
-            <h2>Education</h2>
+            <h2 id="education-title">Education</h2>
             <div class="resume__container">
                 <div class="container left-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Ingenieur informatique</h3>
-                        <p class="resume__date">2024 - Now</p>
-                        <p class="resume__description">Private University of fes</p>
+                        <h3 class="resume__subtitle" id="bsc-cs">Ingenieur informatique</h3>
+                        <p class="resume__date" id="bsc-cs-date">2024 - Now</p>
+                        <p class="resume__description" id="bsc-cs-uni">Private University of Fes</p>
                     </div>
                 </div>
                 <div class="container right-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Associate degree in web developpement</h3>
-                        <p class="resume__date">2021 - 2023</p>
-                        <p class="resume__description">Ista Al Adarissa</p>
+                        <h3 class="resume__subtitle" id="associate-degree">Associate degree in web development</h3>
+                        <p class="resume__date" id="associate-degree-date">2021 - 2023</p>
+                        <p class="resume__description" id="associate-degree-uni">Ista Al Adarissa</p>
                     </div>
                 </div>
                 <div class="container left-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Baccaloréat Phisoque</h3>
-                        <p class="resume__date">2019 - 2020</p>
-                        <p class="resume__description">Lycee al adarissa</p>
+                        <h3 class="resume__subtitle" id="baccalaureate">Baccalaureate in Physics</h3>
+                        <p class="resume__date" id="baccalaureate-date">2019 - 2020</p>
+                        <p class="resume__description" id="baccalaureate-uni">Lycee Al Adarissa</p>
                     </div>
                 </div>
             </div>
@@ -111,14 +108,14 @@
 
         <!-- Projects section -->
         <div class="projects" id="projects">
-            <h2>Projects</h2>
+            <h2 id="projects-title">Projects</h2>
             <div class="cards">
                 <div class="card">
                     <div class="card_article">
                         <img src="./assets/imgs/voyage.png" alt="" class="card_img">
                         <div class="card_data">
-                            <span class="card_title">Application of reservation</span>
-                            <span class="card_desc">apllication help you reservate your favorite hotel</span>
+                            <span class="card_title" id="project1-title">Application of reservation</span>
+                            <span class="card_desc" id="project1-desc">Application helps you reserve your favorite hotel</span>
                             <a href="#" class="github_link">
                                 <img src="./assets/imgs/github-brands-solid.svg" alt="">
                             </a>
@@ -127,8 +124,8 @@
                     <div class="card_article">
                         <img src="./assets/imgs/projet1.jpg" alt="" class="card_img">
                         <div class="card_data">
-                            <span class="card_title">Application of reservation</span>
-                            <span class="card_desc">apllication help you reservate your favorite hotel</span>
+                            <span class="card_title" id="project2-title">Project 2</span>
+                            <span class="card_desc" id="project2-desc">Description of Project 2</span>
                             <a href="#" class="github_link">
                                 <img src="./assets/imgs/github-brands-solid.svg" alt="">
                             </a>
@@ -137,8 +134,8 @@
                     <div class="card_article">
                         <img src="./assets/imgs/projet2.jpeg" alt="" class="card_img">
                         <div class="card_data">
-                            <span class="card_title">Application of reservation</span>
-                            <span class="card_desc">apllication help you reservate your favorite hotel</span>
+                            <span class="card_title" id="project3-title">Project 3</span>
+                            <span class="card_desc" id="project3-desc">Description of Project 3</span>
                             <a href="#" class="github_link">
                                 <img src="./assets/imgs/github-brands-solid.svg" alt="">
                             </a>
@@ -147,8 +144,8 @@
                     <div class="card_article">
                         <img src="./assets/imgs/projet3.jpg" alt="" class="card_img">
                         <div class="card_data">
-                            <span class="card_title">Application of reservation</span>
-                            <span class="card_desc">apllication help you reservate your favorite hotel</span>
+                            <span class="card_title" id="project4-title">Project 4</span>
+                            <span class="card_desc" id="project4-desc">Description of Project 4</span>
                             <a href="#" class="github_link">
                                 <img src="./assets/imgs/github-brands-solid.svg" alt="">
                             </a>
@@ -157,8 +154,8 @@
                     <div class="card_article">
                         <img src="./assets/imgs/projet4.png" alt="" class="card_img">
                         <div class="card_data">
-                            <span class="card_title">Application of reservation</span>
-                            <span class="card_desc">apllication help you reservate your favorite hotel</span>
+                            <span class="card_title" id="project5-title">Project 5</span>
+                            <span class="card_desc" id="project5-desc">Description of Project 5</span>
                             <a href="#" class="github_link">
                                 <img src="./assets/imgs/github-brands-solid.svg" alt="">
                             </a>
@@ -170,34 +167,34 @@
 
         <!-- Experience section -->
          <div class="experience" id="Experience">
-            <h2>Experience</h2>
+            <h2 id="experience-title">Experience</h2>
             <div class="resume__container">
                 <div class="container right-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Recensement général de la population et de l'habitat 2024</h3>
-                        <p class="resume__date">2024</p>
-                        <p class="resume__description">volentaire</p>
+                        <h3 class="resume__subtitle" id="recensement">Recensement général de la population et de l'habitat 2024</h3>
+                        <p class="resume__date" id="recensement-date">2024</p>
+                        <p class="resume__description" id="recensement-desc">Volontaire</p>
                     </div>
                 </div>
                 <div class="container left-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Email developper</h3>
-                        <p class="resume__date">2023</p>
-                        <p class="resume__description">Wondermail</p>
+                        <h3 class="resume__subtitle" id="email-developer">Email developer</h3>
+                        <p class="resume__date" id="email-developer-date">2023</p>
+                        <p class="resume__description" id="email-developer-desc">Wondermail</p>
                     </div>
                 </div>
                 <div class="container right-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Stage de Web developer</h3>
-                        <p class="resume__date">mars 2023</p>
-                        <p class="resume__description">Radeef</p>
+                        <h3 class="resume__subtitle" id="web-developer-internship">Stage de Web developer</h3>
+                        <p class="resume__date" id="web-developer-internship-date">Mars 2023</p>
+                        <p class="resume__description" id="web-developer-internship-desc">Radeef</p>
                     </div>
                 </div>
                 <div class="container left-item">
                     <div class="resume__item ">
-                        <h3 class="resume__subtitle">Wordpress developper</h3>
-                        <p class="resume__date">2021</p>
-                        <p class="resume__description">Freelance</p>
+                        <h3 class="resume__subtitle" id="wordpress-developer">Wordpress developer</h3>
+                        <p class="resume__date" id="wordpress-developer-date">2021</p>
+                        <p class="resume__description" id="wordpress-developer-desc">Freelance</p>
                     </div>
                 </div>
             </div>
@@ -205,34 +202,34 @@
 
          <!-- contact section -->
           <div class="contact" id="contact">
-            <h2>Contact Me</h2>
+            <h2 id="contact-me">Contact Me</h2>
             <div class="contact-container">
                 <div class="contact-form">
                     <form id="contactForm" action="#" method="post">
                         <div class="form-group">
-                            <label for="name"><i class="fas fa-user"></i> Name</label>
+                            <label for="name" id="name-label"><i class="fas fa-user"></i> <span id="name-text">Name</span></label>
                             <input type="text" id="name" name="name" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <label for="email" id="email-label"><i class="fas fa-envelope"></i> <span id="email-text">Email</span></label>
                             <input type="email" id="email" name="email" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                            <label for="phone" id="phone-label"><i class="fas fa-phone"></i> <span id="phone-text">Phone</span></label>
                             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
                         </div>
                         <div class="form-group">
-                            <label for="message"><i class="fas fa-comment"></i> Message</label>
+                            <label for="message" id="message-label"><i class="fas fa-comment"></i> <span id="message-text">Message</span></label>
                             <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
                         </div>
-                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send</button>
+                        <button type="submit" class="btn-submit" id="send-button"><i class="fas fa-paper-plane"></i> <span id="send-text">Send</span></button>
                     </form>
                 </div>
             </div>
           </div>
     </main>
     <footer>
-        <p>&copy; 2025. All rights reserved.</p>
+        <p id="footer-text">&copy; 2025. All rights reserved.</p>
     </footer>
 
     <script>
@@ -352,132 +349,370 @@
             const themeToggle = document.getElementById('theme-toggle');
             const translateToggle = document.getElementById('translate-toggle');
             const body = document.body;
-    
+
             // Toggle dark/light mode
             themeToggle.addEventListener('click', function() {
                 body.classList.toggle('light-mode');
                 themeToggle.textContent = body.classList.contains('light-mode') ? '🌞' : '🌙';
                 localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
             });
-    
+
             // Toggle language
+            const languages = ['en', 'fr'];
+            let languageIndex = 0;
+
             translateToggle.addEventListener('click', function() {
-                const isEnglish = translateToggle.textContent === 'EN';
-                translateToggle.textContent = isEnglish ? 'FR' : 'EN';
-                localStorage.setItem('language', isEnglish ? 'fr' : 'en');
-    
+                languageIndex = (languageIndex + 1) % languages.length;
+                const currentLanguage = languages[languageIndex];
+                translateToggle.textContent = currentLanguage.toUpperCase();
+                localStorage.setItem('language', currentLanguage);
+
                 // Translate content
                 const translations = {
                     'en': {
-                        'Home': 'Home',
-                        'About': 'About',
-                        'Education': 'Education',
-                        'Work': 'Work',
-                        'Experience': 'Experience',
-                        'Contact': 'Contact',
-                        '© 2025 Fati. All rights reserved.': '© 2025 Fati. All rights reserved.'
+                        'page-title': 'Portfolio',
+                        'home-link': 'Home',
+                        'about-link': 'About',
+                        'education-link': 'Education',
+                        'work-link': 'Work',
+                        'experience-link': 'Experience',
+                        'contact-link': 'Contact',
+                        'name': 'Zakariyae el Houari',
+                        'job-title': ' < Engineer / > ',
+                        'email': 'Zakariyaeelhouari@gmail.com',
+                        'phone': '+212 69 30 58 327',
+                        'cv-download': 'Download My CV',
+                        'description': 'I am a software engineer with a passion for web development. I have experience in building web applications using modern technologies like React, Node.js, and MongoDB. I am also familiar with cloud platforms like AWS and Azure. I am always eager to learn new technologies and improve my skills. I am looking for new opportunities to work on exciting projects and collaborate with talented people',
+                        'about-me': 'About Me',
+                        'soft-skills-label': 'Soft Skills',
+                        'hard-skills-label': 'Hard Skills',
+                        'communication': 'Communication',
+                        'teamwork': 'Teamwork',
+                        'problem-solving': 'Problem Solving',
+                        'programming': 'Programming',
+                        'data-analysis': 'Data Analysis',
+                        'machine-learning': 'Machine Learning',
+                        'bsc-cs': 'Ingenieur informatique',
+                        'bsc-cs-date': '2024 - Now',
+                        'bsc-cs-uni': 'Private University of Fes',
+                        'associate-degree': 'Associate degree in web development',
+                        'associate-degree-date': '2021 - 2023',
+                        'associate-degree-uni': 'Ista Al Adarissa',
+                        'baccalaureate': 'Baccalaureate in Physics',
+                        'baccalaureate-date': '2019 - 2020',
+                        'baccalaureate-uni': 'Lycee Al Adarissa',
+                        'projects-title': 'Projects',
+                        'project1-title': 'Application of reservation',
+                        'project1-desc': 'Application helps you reserve your favorite hotel',
+                        'project2-title': 'Project 2',
+                        'project2-desc': 'Description of Project 2',
+                        'project3-title': 'Project 3',
+                        'project3-desc': 'Description of Project 3',
+                        'project4-title': 'Project 4',
+                        'project4-desc': 'Description of Project 4',
+                        'project5-title': 'Project 5',
+                        'project5-desc': 'Description of Project 5',
+                        'experience-title': 'Experience',
+                        'recensement': 'Recensement général de la population et de l\'habitat 2024',
+                        'recensement-date': '2024',
+                        'recensement-desc': 'Volontaire',
+                        'email-developer': 'Email developer',
+                        'email-developer-date': '2023',
+                        'email-developer-desc': 'Wondermail',
+                        'web-developer-internship': 'Stage de Web developer',
+                        'web-developer-internship-date': 'Mars 2023',
+                        'web-developer-internship-desc': 'Radeef',
+                        'wordpress-developer': 'Wordpress developer',
+                        'wordpress-developer-date': '2021',
+                        'wordpress-developer-desc': 'Freelance',
+                        'contact-me': 'Contact Me',
+                        'name-label': 'Name',
+                        'name-text': 'Name',
+                        'email-label': 'Email',
+                        'email-text': 'Email',
+                        'phone-label': 'Phone',
+                        'phone-text': 'Phone',
+                        'message-label': 'Message',
+                        'message-text': 'Message',
+                        'send-button': 'Send',
+                        'send-text': 'Send',
+                        'footer-text': '© 2025. All rights reserved.'
                     },
                     'fr': {
-                        'Home': 'Accueil',
-                        'About': 'À propos',
-                        'Education': 'Éducation',
-                        'Work': 'Travail',
-                        'Experience': 'Expérience',
-                        'Contact': 'Contact',
-                        '© 2025 Fati. All rights reserved.': '© 2025 Fati. Tous droits réservés.'
+                        'page-title': 'Portfolio',
+                        'home-link': 'Accueil',
+                        'about-link': 'À propos',
+                        'education-link': 'Éducation',
+                        'work-link': 'Travail',
+                        'experience-link': 'Expérience',
+                        'contact-link': 'Contact',
+                        'name': 'Zakariyae el Houari',
+                        'job-title': ' < Ingénieur informatique / > ',
+                        'email': 'Zakariyaeelhouari@gmail.com',
+                        'phone': '+212 69 30 58 327',
+                        'cv-download': 'Télécharger mon CV',
+                        'description': "Je suis ingénieur logiciel passionné par le développement web. J'ai de l'expérience dans la création d'applications web en utilisant des technologies modernes comme React, Node.js et MongoDB. Je suis également familier avec les plateformes cloud comme AWS et Azure. Je suis toujours désireux d'apprendre de nouvelles technologies et d'améliorer mes compétences. Je recherche de nouvelles opportunités pour travailler sur des projets passionnants et collaborer avec des personnes talentueuses",
+                        'about-me': 'À propos de moi',
+                        'soft-skills-label': 'Compétences douces',
+                        'hard-skills-label': 'Compétences techniques',
+                        'communication': 'Communication',
+                        'teamwork': 'Travail d\'équipe',
+                        'problem-solving': 'Résolution de problèmes',
+                        'programming': 'Programmation',
+                        'data-analysis': 'Analyse de données',
+                        'machine-learning': 'Apprentissage automatique',
+                        'bsc-cs': 'Ingénieur informatique',
+                        'bsc-cs-date': '2024 - Maintenant',
+                        'bsc-cs-uni': 'Université Privée de Fès',
+                        'associate-degree': 'Diplôme associé en développement web',
+                        'associate-degree-date': '2021 - 2023',
+                        'associate-degree-uni': 'Ista Al Adarissa',
+                        'baccalaureate': 'Baccalauréat en Physique',
+                        'baccalaureate-date': '2019 - 2020',
+                        'baccalaureate-uni': 'Lycée Al Adarissa',
+                        'projects-title': 'Projets',
+                        'project1-title': 'Application de réservation',
+                        'project1-desc': 'Application vous aidant à réserver votre hôtel préféré',
+                        'project2-title': 'Projet 2',
+                        'project2-desc': 'Description du Projet 2',
+                        'project3-title': 'Projet 3',
+                        'project3-desc': 'Description du Projet 3',
+                        'project4-title': 'Projet 4',
+                        'project4-desc': 'Description du Projet 4',
+                        'project5-title': 'Projet 5',
+                        'project5-desc': 'Description du Projet 5',
+                        'experience-title': 'Expérience',
+                        'recensement': 'Recensement général de la population et de l\'habitat 2024',
+                        'recensement-date': '2024',
+                        'recensement-desc': 'Volontaire',
+                        'email-developer': 'Développeur Email',
+                        'email-developer-date': '2023',
+                        'email-developer-desc': 'Wondermail',
+                        'web-developer-internship': 'Stage de Développeur Web',
+                        'web-developer-internship-date': 'Mars 2023',
+                        'web-developer-internship-desc': 'Radeef',
+                        'wordpress-developer': 'Développeur Wordpress',
+                        'wordpress-developer-date': '2021',
+                        'wordpress-developer-desc': 'Freelance',
+                        'contact-me': 'Contactez-moi',
+                        'name-label': 'Nom',
+                        'name-text': 'Nom',
+                        'email-label': 'Email',
+                        'email-text': 'Email',
+                        'phone-label': 'Téléphone',
+                        'phone-text': 'Téléphone',
+                        'message-label': 'Message',
+                        'message-text': 'Message',
+                        'send-button': 'Envoyer',
+                        'send-text': 'Envoyer',
+                        'footer-text': '© 2025. Tous droits réservés.'
                     }
                 };
-    
-                const currentLanguage = isEnglish ? 'fr' : 'en';
-                document.querySelectorAll('a, p').forEach(element => {
-                    const translationKey = Object.keys(translations.en).find(key => translations.en[key] === element.textContent || translations.fr[key] === element.textContent);
-                    if (translationKey) {
+
+                document.querySelectorAll('[id]').forEach(element => {
+                    const translationKey = element.id;
+                    if (translations[currentLanguage][translationKey]) {
                         element.textContent = translations[currentLanguage][translationKey];
                     }
                 });
             });
-    
+
             // Load saved preferences
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme) {
                 body.classList.add(savedTheme === 'light' ? 'light-mode' : 'dark-mode');
                 themeToggle.textContent = savedTheme === 'light' ? '🌞' : '🌙';
             }
-    
+
             const savedLanguage = localStorage.getItem('language');
             if (savedLanguage) {
-                translateToggle.textContent = savedLanguage === 'en' ? 'EN' : 'FR';
+                languageIndex = languages.indexOf(savedLanguage);
+                translateToggle.textContent = savedLanguage.toUpperCase();
                 const translations = {
                     'en': {
-                        'Home': 'Home',
-                        'About': 'About',
-                        'Education': 'Education',
-                        'Work': 'Work',
-                        'Experience': 'Experience',
-                        'Contact': 'Contact',
-                        '© 2025 Fati. All rights reserved.': '© 2025 Fati. All rights reserved.'
+                        'page-title': 'Portfolio',
+                        'home-link': 'Home',
+                        'about-link': 'About',
+                        'education-link': 'Education',
+                        'work-link': 'Work',
+                        'experience-link': 'Experience',
+                        'contact-link': 'Contact',
+                        'name': 'Zakariyae el Houari',
+                        'job-title': ' < Engineer / > ',
+                        'email': 'Zakariyaeelhouari@gmail.com',
+                        'phone': '+212 69 30 58 327',
+                        'cv-download': 'Download My CV',
+                        'description': 'I am a software engineer with a passion for web development. I have experience in building web applications using modern technologies like React, Node.js, and MongoDB. I am also familiar with cloud platforms like AWS and Azure. I am always eager to learn new technologies and improve my skills. I am looking for new opportunities to work on exciting projects and collaborate with talented people',
+                        'about-me': 'About Me',
+                        'soft-skills-label': 'Soft Skills',
+                        'hard-skills-label': 'Hard Skills',
+                        'communication': 'Communication',
+                        'teamwork': 'Teamwork',
+                        'problem-solving': 'Problem Solving',
+                        'programming': 'Programming',
+                        'data-analysis': 'Data Analysis',
+                        'machine-learning': 'Machine Learning',
+                        'bsc-cs': 'Ingenieur informatique',
+                        'bsc-cs-date': '2024 - Now',
+                        'bsc-cs-uni': 'Private University of Fes',
+                        'associate-degree': 'Associate degree in web development',
+                        'associate-degree-date': '2021 - 2023',
+                        'associate-degree-uni': 'Ista Al Adarissa',
+                        'baccalaureate': 'Baccalaureate in Physics',
+                        'baccalaureate-date': '2019 - 2020',
+                        'baccalaureate-uni': 'Lycee Al Adarissa',
+                        'projects-title': 'Projects',
+                        'project1-title': 'Application of reservation',
+                        'project1-desc': 'Application helps you reserve your favorite hotel',
+                        'project2-title': 'Project 2',
+                        'project2-desc': 'Description of Project 2',
+                        'project3-title': 'Project 3',
+                        'project3-desc': 'Description of Project 3',
+                        'project4-title': 'Project 4',
+                        'project4-desc': 'Description of Project 4',
+                        'project5-title': 'Project 5',
+                        'project5-desc': 'Description of Project 5',
+                        'experience-title': 'Experience',
+                        'recensement': 'Recensement général de la population et de l\'habitat 2024',
+                        'recensement-date': '2024',
+                        'recensement-desc': 'Volontaire',
+                        'email-developer': 'Email developer',
+                        'email-developer-date': '2023',
+                        'email-developer-desc': 'Wondermail',
+                        'web-developer-internship': 'Stage de Web developer',
+                        'web-developer-internship-date': 'Mars 2023',
+                        'web-developer-internship-desc': 'Radeef',
+                        'wordpress-developer': 'Wordpress developer',
+                        'wordpress-developer-date': '2021',
+                        'wordpress-developer-desc': 'Freelance',
+                        'contact-me': 'Contact Me',
+                        'name-label': 'Name',
+                        'name-text': 'Name',
+                        'email-label': 'Email',
+                        'email-text': 'Email',
+                        'phone-label': 'Phone',
+                        'phone-text': 'Phone',
+                        'message-label': 'Message',
+                        'message-text': 'Message',
+                        'send-button': 'Send',
+                        'send-text': 'Send',
+                        'footer-text': '© 2025. All rights reserved.'
                     },
                     'fr': {
-                        'Home': 'Accueil',
-                        'About': 'À propos',
-                        'Education': 'Éducation',
-                        'Work': 'Travail',
-                        'Experience': 'Expérience',
-                        'Contact': 'Contact',
-                        '© 2025 Fati. All rights reserved.': '© 2025 Fati. Tous droits réservés.'
+                        'page-title': 'Portfolio',
+                        'home-link': 'Accueil',
+                        'about-link': 'À propos',
+                        'education-link': 'Éducation',
+                        'work-link': 'Travail',
+                        'experience-link': 'Expérience',
+                        'contact-link': 'Contact',
+                        'name': 'Zakariyae el Houari',
+                        'job-title': ' < Ingénieur informatique / > ',
+                        'email': 'Zakariyaeelhouari@gmail.com',
+                        'phone': '+212 69 30 58 327',
+                        'cv-download': 'Télécharger mon CV',
+                        'description': "Je suis ingénieur logiciel passionné par le développement web. J'ai de l'expérience dans la création d'applications web en utilisant des technologies modernes comme React, Node.js et MongoDB. Je suis également familier avec les plateformes cloud comme AWS et Azure. Je suis toujours désireux d'apprendre de nouvelles technologies et d'améliorer mes compétences. Je recherche de nouvelles opportunités pour travailler sur des projets passionnants et collaborer avec des personnes talentueuses",
+                        'about-me': 'À propos de moi',
+                        'soft-skills-label': 'Compétences douces',
+                        'hard-skills-label': 'Compétences techniques',
+                        'communication': 'Communication',
+                        'teamwork': 'Travail d\'équipe',
+                        'problem-solving': 'Résolution de problèmes',
+                        'programming': 'Programmation',
+                        'data-analysis': 'Analyse de données',
+                        'machine-learning': 'Apprentissage automatique',
+                        'bsc-cs': 'Ingénieur informatique',
+                        'bsc-cs-date': '2024 - Maintenant',
+                        'bsc-cs-uni': 'Université Privée de Fès',
+                        'associate-degree': 'Diplôme associé en développement web',
+                        'associate-degree-date': '2021 - 2023',
+                        'associate-degree-uni': 'Ista Al Adarissa',
+                        'baccalaureate': 'Baccalauréat en Physique',
+                        'baccalaureate-date': '2019 - 2020',
+                        'baccalaureate-uni': 'Lycée Al Adarissa',
+                        'projects-title': 'Projets',
+                        'project1-title': 'Application de réservation',
+                        'project1-desc': 'Application vous aidant à réserver votre hôtel préféré',
+                        'project2-title': 'Projet 2',
+                        'project2-desc': 'Description du Projet 2',
+                        'project3-title': 'Projet 3',
+                        'project3-desc': 'Description du Projet 3',
+                        'project4-title': 'Projet 4',
+                        'project4-desc': 'Description du Projet 4',
+                        'project5-title': 'Projet 5',
+                        'project5-desc': 'Description du Projet 5',
+                        'experience-title': 'Expérience',
+                        'recensement': 'Recensement général de la population et de l\'habitat 2024',
+                        'recensement-date': '2024',
+                        'recensement-desc': 'Volontaire',
+                        'email-developer': 'Développeur Email',
+                        'email-developer-date': '2023',
+                        'email-developer-desc': 'Wondermail',
+                        'web-developer-internship': 'Stage de Développeur Web',
+                        'web-developer-internship-date': 'Mars 2023',
+                        'web-developer-internship-desc': 'Radeef',
+                        'wordpress-developer': 'Développeur Wordpress',
+                        'wordpress-developer-date': '2021',
+                        'wordpress-developer-desc': 'Freelance',
+                        'contact-me': 'Contactez-moi',
+                        'name-label': 'Nom',
+                        'name-text': 'Nom',
+                        'email-label': 'Email',
+                        'email-text': 'Email',
+                        'phone-label': 'Téléphone',
+                        'phone-text': 'Téléphone',
+                        'message-label': 'Message',
+                        'message-text': 'Message',
+                        'send-button': 'Envoyer',
+                        'send-text': 'Envoyer',
+                        'footer-text': '© 2025. Tous droits réservés.'
                     }
                 };
-    
-                document.querySelectorAll('a, p').forEach(element => {
-                    const translationKey = Object.keys(translations.en).find(key => translations.en[key] === element.textContent || translations.fr[key] === element.textContent);
-                    if (translationKey) {
+
+                document.querySelectorAll('[id]').forEach(element => {
+                    const translationKey = element.id;
+                    if (translations[savedLanguage][translationKey]) {
                         element.textContent = translations[savedLanguage][translationKey];
                     }
                 });
             }
         });
 
-
         // Get the labels and skill sections
-// Get the labels and skill sections
-const softSkillsLabel = document.getElementById('soft-skills-label');
-const hardSkillsLabel = document.getElementById('hard-skills-label');
-const softSkills = document.getElementById('soft-skills');
-const hardSkills = document.getElementById('hard-skills');
+        const softSkillsLabel = document.getElementById('soft-skills-label');
+        const hardSkillsLabel = document.getElementById('hard-skills-label');
+        const softSkills = document.getElementById('soft-skills');
+        const hardSkills = document.getElementById('hard-skills');
 
-// Set default state: Soft Skills visible and active
-softSkills.style.display = 'block';
-softSkillsLabel.classList.add('active');
+        // Set default state: Soft Skills visible and active
+        softSkills.style.display = 'block';
+        softSkillsLabel.classList.add('active');
 
-// Add click event listeners
-softSkillsLabel.addEventListener('click', () => {
-    softSkills.style.display = 'block';
-    hardSkills.style.display = 'none';
-    softSkillsLabel.classList.add('active');
-    hardSkillsLabel.classList.remove('active');
-});
+        // Add click event listeners
+        softSkillsLabel.addEventListener('click', () => {
+            softSkills.style.display = 'block';
+            hardSkills.style.display = 'none';
+            softSkillsLabel.classList.add('active');
+            hardSkillsLabel.classList.remove('active');
+        });
 
-hardSkillsLabel.addEventListener('click', () => {
-    hardSkills.style.display = 'block';
-    softSkills.style.display = 'none';
-    hardSkillsLabel.classList.add('active');
-    softSkillsLabel.classList.remove('active');
-});
-    
+        hardSkillsLabel.addEventListener('click', () => {
+            hardSkills.style.display = 'block';
+            softSkills.style.display = 'none';
+            hardSkillsLabel.classList.add('active');
+            softSkillsLabel.classList.remove('active');
+        });
 
-    let menulist = document.getElementById('menulist');
-    menulist.style.maxHeight = "0px";
-    function toogleMenu() {
-        //show menu
-        if (menulist.style.maxHeight == "0px") {
-            menulist.style.maxHeight = "520px";
-        } else {
-            menulist.style.maxHeight = "0px";
+        let menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+        function toggleMenu() {
+            //show menu
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "520px";
+            } else {
+                menulist.style.maxHeight = "0px";
+            }
         }
-    }
-
     </script>
-    
-    
 </body>
 </html>
