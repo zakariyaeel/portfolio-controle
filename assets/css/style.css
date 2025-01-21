@@ -564,6 +564,7 @@ div > h2 {
 }
 .projects .card_img{
     width: 328px;
+    object-fit: fill;
 }
 .projects .card_data{
     width: 240px;
@@ -591,6 +592,7 @@ div > h2 {
 .github_link img{
     width: 20px;
     float: right;
+    
 }
 
 /* animations and hover of projects */
